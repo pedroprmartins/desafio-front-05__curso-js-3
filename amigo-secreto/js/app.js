@@ -37,6 +37,11 @@ function adicionar() {
 // função para sortear o amigo secreto
 //-------------------------------------------------------------
 function sortear() {
+  if (listaSorteio.length < 4) {
+    alert("Quantidade de pessoas insuficiente.");
+    return;
+  }
+
   embaralha(listaSorteio);
   let resultado = document.getElementById("lista-sorteio");
 
